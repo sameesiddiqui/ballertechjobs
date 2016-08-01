@@ -40,15 +40,28 @@ a {
 .header a {
   color: #fff;
 }
-.home:hover::after, .signup:hover::after, .companies:hover::after{
+.home::after, .signup::after, .companies::after{
   content: "";
   height: 1px;
   background-color: #fff;
   width: 100%;
   display: block;
   margin-top: 2px;
-  
+  -ms-transform: scaleX(0); /* IE 9 */
+  -webkit-transform: scaleX(0); /* Chrome, Safari, Opera */
+  transform: scaleX(0);
+  transition: -webkit-transform .3s cubic-bezier(.82,0,.12,1);
+transition: transform .3s cubic-bezier(.82,0,.12,1);
+transition: transform .3s cubic-bezier(.82,0,.12,1),-webkit-transform .3s cubic-bezier(.82,0,.12,1);
+-webkit-transform-origin: left center;
+-ms-transform-origin: left center;
+transform-origin: left center;
 }
+
+ .home:hover::after, .signup:hover::after, .companies:hover::after{
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+ }
 
 .hero {
   background: url("../img/hero_home.jpg") no-repeat center center;
@@ -75,12 +88,14 @@ a {
   display: inline-block;
   float: right;
   margin-right: 50px;
+  letter-spacing: 1px;
 }
 
 .left li {
   display: inline-block;
   float: left;
   margin-left: 50px;
+  letter-spacing: 1px;
 }
 
 .login {
@@ -97,9 +112,6 @@ a {
   color: #000000;
 }
 
-.signup {
-
-}
 
 .herotext {
   text-align: center;
@@ -115,15 +127,30 @@ a {
 }
 
 .grid {
-  margin-top: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
+
 
 .griditem {
   display: inline-block;
   zoom: 1;         /* for IE */
   display*:inline; /* for IE */
   margin-left: 5.3%;
-    text-align: center;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin-top: 50px;
+}
+
+
+.griditem p {
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  letter-spacing: 1px;
 }
 
  .box {
@@ -132,11 +159,19 @@ a {
    height:350px;
    border-radius: 15px;
    background-color: #ffffff;
+   transition: all .3s cubic-bezier(.694,.0482,.335,1);
  }
 
- .companylogo {
+ .box:hover .companylogo{
+
+   max-width: 70%;
    max-height: 70%;
-    max-width: 70%;
+ }
+
+
+ .companylogo {
+   max-height: 60%;
+    max-width: 60%;
     width: auto;
     height: auto;
     position: absolute;
@@ -145,7 +180,31 @@ a {
     left: 0;
     right: 0;
     margin: auto;
+    transition: all .3s;
  }
+
+.bottom {
+  text-align: center;
+}
+
+.bottom h1{
+  font-size: 2.5em;
+}
+
+button {
+  background-color: #00ccff;
+  color: #fff;
+  padding:20px 36px;
+  letter-spacing: 1px;
+  margin-bottom: 70px;
+  border: none;
+
+  transition: all .3s
+}
+
+button:hover {
+  background-color: #0099ff;
+}
 
 ::-moz-selection {
     background: #b3d4fc;
