@@ -129,6 +129,10 @@ transform-origin: left center;
 .grid {
   margin-top: 100px;
   margin-bottom: 100px;
+  position: relative;;
+  right:0;
+  left:0;
+  text-align: center;
 }
 
 
@@ -136,9 +140,10 @@ transform-origin: left center;
   display: inline-block;
   zoom: 1;         /* for IE */
   display*:inline; /* for IE */
-  margin-left: 5.3%;
   text-align: center;
   text-decoration: none;
+  margin-left: 35px;
+  
   color: #000;
   margin-top: 50px;
 }
@@ -181,6 +186,18 @@ transform-origin: left center;
     right: 0;
     margin: auto;
     transition: all .3s;
+ }
+
+#uber{
+  max-width: 70%;
+  max-height: 70%;
+}
+
+
+ .box:hover #uber{
+
+   max-width: 80%;
+   max-height: 80%;
  }
 
 .bottom {
