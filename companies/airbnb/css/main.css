@@ -121,10 +121,15 @@ transform-origin: left center;
 .herotext h1{
   font-size: 4em;
   letter-spacing: 4px;
+  margin-bottom: -2%;
 }
 
 .herotext p{
   font-size: 2em;
+}
+
+#position{
+  margin-bottom: -1%;
 }
 
 .grid {
@@ -195,12 +200,16 @@ transform-origin: left center;
 
    border-radius: 15px;
  }
+.resume {
+  float: left;
+}
 
 table {
   width: 50%;
   margin: auto;
   background-color: #fff;
   border-radius: 15px;
+
 }
 
 th, td{
