@@ -24,7 +24,7 @@ html {
  * Customize the background color to match your design.
  */
 body {
-
+  background-color: #f3f2f2;
 }
 
 
@@ -38,13 +38,14 @@ a {
   padding-bottom: 2%;
 }
 
-.clearfix {
-  overflow: auto;
-}
-
 .header a {
   color: #fff;
 }
+
+.clearfix{
+  overflow: auto;
+}
+
 .home::after, .signup::after, .companies::after{
   content: "";
   height: 1px;
@@ -69,10 +70,9 @@ transform-origin: left center;
  }
 
 .hero {
-  background: url("../img/hero_home.jpg") no-repeat center;
+  background: url("../img/hero_home.jpg") no-repeat center center;
   background-size: cover;
-  height: 100%;
-  width: auto;
+  height: 50vh;
   position: absolute;
   top:0;
   left: 0;
@@ -132,60 +132,52 @@ transform-origin: left center;
   font-size: 2em;
 }
 
-#form {
-  text-align: center;
-  border-radius: 15px;
+
+ #container {
+   text-align: center;
+   width: 60%;
+   border-radius: 15px;
   background-color: #fff;
-  margin:auto;
-  margin-top: 8%;
-  width: 25%;
-  height: auto;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+   transition: all .3s cubic-bezier(.694,.0482,.335,1);
+   border: 1px solid #fff;
+ }
 
-}
-
-#email {
-  margin-bottom: 2%;
-}
-
-form {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 100%;
+.info{
+  width: 32%;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #000;
+  vertical-align: top;
+}
+.info h2{
+  font-size: 2em;
+}
+.info p{
+  font-size: 1.1em;
 }
 
-input[type=text], input[type=password] {
-  width:80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  outline: none;
-  box-sizing: border-box;
-  border: 3px solid #ccc;
-  transition: all .5s;
+#info h1{
+  font-size: 3em;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  border: 3px solid #00ccff;
+#info p{
+  font-size: 1.3em;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-
-#firstsub{
-  margin-bottom: -5%;
-}
-
-h5 a{
-  color: #00ccff;
-  transition: all .3s;
-}
-
-h5 a:hover{
-  color: #0099ff;
-}
+ #subinfo{
+   display: inline-block;
+   width: 100%;
+   margin-bottom: 3%;
+ }
 
 .bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
 }
 
@@ -193,19 +185,90 @@ h5 a:hover{
   font-size: 2.5em;
 }
 
-#submit {
+button {
   background-color: #00ccff;
   color: #fff;
-  padding:14px 30px;
+  padding:20px 36px;
   letter-spacing: 1px;
   border: none;
-
+  margin-bottom: 5%;
   transition: all .3s
 }
 
-#submit:hover {
+button:hover {
   background-color: #0099ff;
 }
+
+.grid {
+  position: relative;;
+  right:0;
+  left:0;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+
+.griditem {
+  display: inline-block;
+  zoom: 1;         /* for IE */
+  display*:inline; /* for IE */
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+
+.griditem p {
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  letter-spacing: 1px;
+}
+
+ .box {
+   position: relative;
+   width: 150px;
+   height:150px;
+   border-radius: 15px;
+   background-color: #ffffff;
+   transition: all .3s cubic-bezier(.694,.0482,.335,1);
+ }
+
+ .box:hover .companylogo{
+
+   max-width: 35%;
+   max-height: 35%;
+ }
+
+
+ .companylogo {
+   max-height: 30%;
+    max-width: 30%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .3s;
+ }
+
+#uber{
+  max-width: 35%;
+  max-height: 35%;
+}
+
+
+ .box:hover #uber{
+
+   max-width: 40%;
+   max-height: 40%;
+ }
+
 
 ::-moz-selection {
     background: #b3d4fc;
