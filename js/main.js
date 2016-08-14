@@ -1,9 +1,9 @@
 var backgrounds = [
-  "url('img/facebook_hq.jpg')",
-  "url('img/google_hq.jpg')",
-  "url('img/tesla_hq.jpg')",
-  "url('img/microsoft_hq.jpg')",
-  "url('img/airbnb_hq.jpg')"
+  "url('img/hq/facebook_hq.jpg')",
+  "url('img/hq/google_hq.jpg')",
+  "url('img/hq/airbnb_hq.jpg')",
+  "url('img/hq/microsoft_hq.jpg')",
+  "url('img/hq/tesla_hq.jpg')"
 ];
 
 var slideIndex =-1;
@@ -30,5 +30,5 @@ function carousel(num) {
   x[slideIndex].className += " whitehover";
   document.getElementsByClassName("header")[0].style.background = backgrounds[slideIndex];
   document.getElementsByClassName("header")[0].style.backgroundSize = "cover";
-  document.getElementsByClassName("header")[0].style.backgroundPosition = "0% 20%";
+  document.getElementsByClassName("header")[0].style.backgroundPosition = "center";
 }

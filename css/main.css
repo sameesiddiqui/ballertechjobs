@@ -36,11 +36,11 @@ a {
 .header {
   width: 100%;
   color: #fff;
-  background: url("../img/facebook_hq.jpg") 100% 0%;
+  background: url("../img/hq/facebook_hq.jpg") 100% 0%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90%;
-  transition: background-image .3s;
+  transition: background-image 1s;
 }
 .clearfix{
   overflow: auto;

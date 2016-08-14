@@ -25,6 +25,7 @@ html {
  */
 body {
   background-color: #f3f2f2;
+    font-family: 'Roboto',sans-serif;
 }
 
 
@@ -69,7 +70,7 @@ transform-origin: left center;
  }
 
 .hero {
-  background: url("../img/hero_home.jpg") no-repeat center;
+  background: url("../img/hq/facebook_hq.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
   width: auto;
@@ -79,7 +80,7 @@ transform-origin: left center;
   right: 0;
   bottom: 0;
   z-index: -1;
-
+  transition: 1s;
 }
 
 .inline-list {
@@ -168,9 +169,6 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 
-#firstsub{
-  margin-bottom: -5%;
-}
 
 h5 a{
   color: #00ccff;

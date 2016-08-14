@@ -25,6 +25,7 @@ html {
  */
 body {
   background-color: #f3f2f2;
+    font-family: 'Roboto',sans-serif;
 }
 
 
@@ -146,7 +147,7 @@ transform-origin: left center;
  }
 
 .info{
-  width: 32%;
+  width: 30%;
   display: inline-block;
   vertical-align: top;
 }
