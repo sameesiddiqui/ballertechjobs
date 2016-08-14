@@ -69,7 +69,7 @@ transform-origin: left center;
  }
 
 .hero {
-  background-color: #000;
+  background: url("../img/hero_home.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
   width: auto;
@@ -133,44 +133,53 @@ transform-origin: left center;
 }
 
 #form {
-  display: block;
-  margin-top: 15%;
-  margin-bottom: 15%;
-  margin-left: 35%;
-  margin-right: 35%;
   text-align: center;
   border-radius: 15px;
   background-color: #fff;
-  padding-bottom: 2%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin:auto;
+  margin-top: 8%;
+  width: 25%;
+  height: auto;
 
 }
 
-#email {
+#email, #fullname {
   margin-bottom: 2%;
 }
 
 form {
-  margin-top: 5%;
+  width: 100%;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -7%;
 }
 
-h5 {
-  margin-bottom: -3%;
+input[type=text], input[type=password] {
+  width:80%;
+  padding: 12px 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: all .5s;
 }
 
- .box:hover #uber{
+input[type=text]:focus, input[type=password]:focus {
+  border: 3px solid #00ccff;
+}
 
-   max-width: 80%;
-   max-height: 80%;
- }
+
+#firstsub{
+  margin-bottom: -5%;
+}
+
+h5 a{
+  color: #00ccff;
+  transition: all .3s;
+}
+
+h5 a:hover{
+  color: #0099ff;
+}
 
 .bottom {
   text-align: center;
@@ -183,9 +192,8 @@ h5 {
 #submit {
   background-color: #00ccff;
   color: #fff;
-  padding:10px 36px;
+  padding:14px 30px;
   letter-spacing: 1px;
-  margin-bottom: 70px;
   border: none;
 
   transition: all .3s
@@ -194,7 +202,6 @@ h5 {
 #submit:hover {
   background-color: #0099ff;
 }
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;

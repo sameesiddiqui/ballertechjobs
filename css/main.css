@@ -25,6 +25,7 @@ html {
  */
 body {
   background-color: #f3f2f2;
+  font-family: 'Roboto',sans-serif;
 }
 
 
@@ -35,6 +36,14 @@ a {
 .header {
   width: 100%;
   color: #fff;
+  background: url("../img/facebook_hq.jpg") 100% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90%;
+  transition: background-image .3s;
+}
+.clearfix{
+  overflow: auto;
 }
 
 .header a {
@@ -63,10 +72,43 @@ transform-origin: left center;
    transform: scaleX(1);
  }
 
-.hero {
-  background: url("../img/hero_home.jpg") no-repeat center center;
+.buttoncontainer{
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  vertical-align: bottom;
+  z-index: 1;
+}
+
+.imageselect{
+  display: inline-block;
+  height:20px;
+  width: 20px;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition: .3s;
+}
+
+.whitehover{
+  background-color: #fff;
+}
+
+.imageselect:hover{
+  background-color: #fff;
+}
+
+button:focus {
+  outline-style: none;
+}
+
+/*.hero{
+  background: url("../img/google_hq.jpg") no-repeat 100% 65%;
   background-size: cover;
-  height: 50vh;
+  border: 1px solid #000;
+  height: 90%;
   position: absolute;
   top:0;
   left: 0;
@@ -74,7 +116,8 @@ transform-origin: left center;
   bottom: 0;
   z-index: -1;
 
-}
+}*/
+
 
 .inline-list {
   text-align: center;
@@ -116,18 +159,25 @@ transform-origin: left center;
 .herotext {
   text-align: center;
   padding-top: 2%;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .herotext h1{
-  font-size: 4em
+  font-size: 400%;
 }
 
 .herotext p{
-  font-size: 2em;
+  text-shadow: 2px 2px #000;
+  font-size: 200%;
+  padding-bottom: 10%
+}
+
+#companypicname {
+  text-align: center;
 }
 
 .grid {
-  margin-top: 100px;
   margin-bottom: 100px;
   position: relative;;
   right:0;
@@ -200,6 +250,18 @@ transform-origin: left center;
    max-height: 80%;
  }
 
+ #tesla{
+   width: 150%;
+   height: 150%;
+ }
+
+
+  .box:hover #tesla{
+
+    max-width: 70%;
+    max-height: 70%;
+  }
+
 .bottom {
   text-align: center;
 }
@@ -208,7 +270,7 @@ transform-origin: left center;
   font-size: 2.5em;
 }
 
-button {
+#learnmore {
   background-color: #00ccff;
   color: #fff;
   padding:20px 36px;
@@ -219,7 +281,7 @@ button {
   transition: all .3s
 }
 
-button:hover {
+#learnmore:hover {
   background-color: #0099ff;
 }
 
