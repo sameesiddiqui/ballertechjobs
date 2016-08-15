@@ -25,6 +25,7 @@ html {
  */
 body {
   background-color: #f3f2f2;
+  font-family: 'Roboto',sans-serif;
 }
 
 
@@ -128,12 +129,9 @@ transform-origin: left center;
   font-size: 2em;
 }
 
-#position {
-  margin-bottom: -1%;
-}
 
 .grid {
-
+  margin-bottom: -2%;
   text-align: center;
 }
 
@@ -157,6 +155,11 @@ transform-origin: left center;
   left: 0;
   right: 0;
   letter-spacing: 1px;
+
+}
+
+#position {
+  font-size: 2em;
 }
 
  .box {
@@ -192,7 +195,7 @@ transform-origin: left center;
  .middle {
    width: 70%;
    height: auto;
-   border: 1px solid #000;
+
    margin: auto;
    text-align: center;
    position: relative;
@@ -262,7 +265,7 @@ td a::after {
   margin-bottom: -8%;
   text-align: center;
   display: block;
-  border: 1px solid #000;
+
 
 }
 

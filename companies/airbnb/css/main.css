@@ -36,8 +36,17 @@ a {
 .header {
   width: 100%;
   color: #fff;
+  background: url("../img/hero.jpg") 100% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+  height: 90%;
+  position: relative;
 }
 
+.clearfix{
+  overflow: auto;
+}
 .header a {
   color: #fff;
 }
@@ -64,7 +73,41 @@ transform-origin: left center;
    transform: scaleX(1);
  }
 
-.hero {
+ .buttoncontainer{
+   text-align: center;
+   width: 100%;
+   height: 5%;
+   position: absolute;
+   bottom: 0;
+   z-index: 1;
+
+ }
+
+ .imageselect{
+   display: inline-block;
+   height:20px;
+   width: 20px;
+   padding: 0;
+   text-align: center;
+   border-radius: 50%;
+   border: 1px solid #fff;
+   background-color: transparent;
+   transition: .3s;
+ }
+
+ .whitehover{
+   background-color: #fff;
+ }
+
+ .imageselect:hover{
+   background-color: #fff;
+ }
+
+ button:focus {
+   outline-style: none;
+ }
+
+/*.hero {
   background: url("../img/hero.jpg") no-repeat 50% 30%;
   background-size: cover;
   height: 50vh;
@@ -75,7 +118,7 @@ transform-origin: left center;
   bottom: 0;
   z-index: -1;
 
-}
+}*/
 
 .inline-list {
   text-align: center;
@@ -116,13 +159,15 @@ transform-origin: left center;
 
 .herotext {
   text-align: center;
-  padding-top: 50px;
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 3%;
+  padding-bottom: 13%;
 }
 
 .herotext h1{
   font-size: 4em;
   letter-spacing: 4px;
-  margin-bottom: -2%;
 }
 
 .herotext p{
@@ -139,41 +184,6 @@ transform-origin: left center;
 }
 
 
-.griditem {
-  display: inline-block;
-  zoom: 1;         /* for IE */
-  display*:inline; /* for IE */
-
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-  margin-bottom: 2%;
-  margin-top: 3%;
-}
-
-.griditem p {
-  color: #000;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  letter-spacing: 1px;
-}
-
- .box {
-   position: relative;
-   width: 350px;
-   height:350px;
-   border-radius: 50%;
-   background-color: #ffffff;
-   transition: all .3s cubic-bezier(.694,.0482,.335,1);
- }
-
- .box:hover .companylogo{
-
-   max-width: 70%;
-   max-height: 70%;
- }
 
 
  .companylogo {
@@ -191,30 +201,43 @@ transform-origin: left center;
  }
 
  .middle {
-   width: 40%;
-   height: 100px;
-   background-color: #fff;
+   width: 60%;
+   height: auto;
+   border: 1px solid #000;
    margin: auto;
    text-align: center;
-   display: inline;
+   position: relative;
+   display: block;
    border-radius: 15px;
  }
 .resume {
   float: left;
 }
+#companyinfo {
+  width: 47%;
+  height: 400px;
+  background: #fff;
+  float: right;
+  border-radius: 15px;
+}
 
 table {
-  width: 50%;
+  width: 47%;
   margin: auto;
   background-color: #fff;
   border-radius: 15px;
-
+  float: left;
 }
 
-th, td{
-  height: 65px;
-
+th{
   font-size: 2em;
+  padding-top: 4.5%;
+}
+
+td{
+  height: 30px;
+
+  font-size: 1.5em;
 }
 
 td a{

@@ -73,6 +73,7 @@ transform-origin: left center;
 .hero {
   background: url("../img/hero_home.jpg") no-repeat center center;
   background-size: cover;
+  background-position: 100% 30%;
   height: 50vh;
   position: absolute;
   top:0;
