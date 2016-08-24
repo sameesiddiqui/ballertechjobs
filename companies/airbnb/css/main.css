@@ -215,14 +215,21 @@ transform-origin: left center;
 }
 #companyinfo {
   width: 47%;
-  height: 400px;
+  height: auto;
   background: #fff;
   float: right;
   border-radius: 15px;
 }
 
+#companyinfo p {
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+
 table {
   width: 47%;
+  height: 100%;
   margin: auto;
   background-color: #fff;
   border-radius: 15px;
@@ -235,7 +242,7 @@ th{
 }
 
 td{
-  height: 30px;
+  height: 43px;
 
   font-size: 1.5em;
 }
