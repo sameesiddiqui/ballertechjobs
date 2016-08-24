@@ -137,7 +137,7 @@ transform-origin: left center;
 
  #container {
    text-align: center;
-   width: 60%;
+   width: 70%;
    border-radius: 15px;
   background-color: #fff;
     margin: auto;
@@ -148,9 +148,10 @@ transform-origin: left center;
  }
 
 .info{
-  width: 30%;
+  width: 27%;
   display: inline-block;
   vertical-align: top;
+  padding: 2%;
 }
 .info h2{
   font-size: 2em;

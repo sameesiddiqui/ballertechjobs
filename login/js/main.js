@@ -1,9 +1,9 @@
 var backgrounds = [
-  "url('img/hq/google_hq.jpg')",
+  "url('img/hq/uber_hq.jpg')",
   "url('img/hq/facebook_hq.jpg')",
   "url('img/hq/apple_hq.jpg')",
   "url('img/hq/twitter_hq.jpg')",
-  "url('img/hq/uber_hq.jpg')"
+  "url('img/hq/google_hq.jpg')"
 ];
 
 var slideIndex =-1;
