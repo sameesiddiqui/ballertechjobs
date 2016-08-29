@@ -163,6 +163,9 @@ transform-origin: left center;
   margin-left: 15%;
   padding-top: 3%;
   padding-bottom: 13%;
+  -webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
+  -moz-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.75);
 }
 
 .herotext h1{

@@ -161,6 +161,9 @@ button:focus {
   padding-top: 2%;
   width: 70%;
   margin-left: 15%;
+  -webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
+  -moz-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
+  text-shadow: 2px 2px rgba(0,0,0,0.75);
 }
 
 .herotext h1{
@@ -168,7 +171,7 @@ button:focus {
 }
 
 .herotext p{
-  text-shadow: 2px 2px #000;
+
   font-size: 200%;
   padding-bottom: 10%
 }
