@@ -26,6 +26,7 @@ html {
 body {
   background-color: #f3f2f2;
   font-family: 'Roboto',sans-serif;
+  margin: 0;
 }
 
 
@@ -36,22 +37,19 @@ a {
 .header {
   width: 100%;
   color: #fff;
-  background: url("../img/hq/google_hq.jpg") 100% 0%;
+  background: url("../img/hero.jpg") 100% 20%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90%;
-  -webkit-transition: background-image .5s;
-  -moz-transition: background-image .5s;
-  -o-transition: background-image .5s;
-  transition: background-image .5s;
+  text-align: center;
+  height: 50vh;
 }
+
 .clearfix{
   overflow: auto;
 }
 
 .header a {
   color: #fff;
-  width: 100%;
 }
 .home::after, .signup::after, .companies::after{
   content: "";
@@ -76,38 +74,18 @@ transform-origin: left center;
    transform: scaleX(1);
  }
 
-.buttoncontainer{
-  text-align: center;
-  position: relative;
+/*.hero {
+  background: url("../img/hero.jpg") no-repeat 50% 30%;
+  background-size: cover;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  margin-bottom: 1%;
-  vertical-align: bottom;
-  z-index: 1;
-}
+  z-index: -1;
 
-.imageselect{
-  display: inline-block;
-  height:20px;
-  width: 20px;
-  padding: 0;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  background-color: transparent;
-  transition: .3s;
-}
-
-.whitehover{
-  background-color: #fff;
-}
-
-.imageselect:hover{
-  background-color: #fff;
-}
-
-button:focus {
-  outline-style: none;
-}
+}*/
 
 .inline-list {
   text-align: center;
@@ -127,122 +105,160 @@ button:focus {
   -webkit-transition: all 0.5s ease;
 }
 
+.login {
+  margin-right: 50px;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid #fff;
+  transition: all .3s cubic-bezier(.694,.0482,.335,1);
+}
+
+.login:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+
 .herotext {
+
+  margin: 5%;
   text-align: center;
-  padding-top: 2%;
-  width: 70%;
-  margin-left: 15%;
-  -webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
-  -moz-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
-  text-shadow: 2px 2px rgba(0,0,0,0.75);
 }
 
 .herotext h1{
-  font-size: 400%;
+  color: #fff;
+  padding: 1%;
+  /*background-color: rgba(64, 64, 64, 0.5);*/
+  display: inline;
+  border-radius: 10px;
+  -webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
+  -moz-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.75);
+  /*border: 1px solid #000;*/
+  text-align: center;
+  font-size: 3.5em;
+  letter-spacing: 4px;
 }
 
 .herotext p{
-
-  font-size: 200%;
-  padding-bottom: 10%
+  font-size: 2em;
+}
+#position{
+  font-size: 2.5em;
 }
 
-#companypicname {
-  text-align: center;
-}
-
-#companytext p{
-  font-size: 1.3em;
-}
-
-.grid {
-  margin-bottom: 4%;
-  position: relative;;
-  right:0;
-  left:0;
-  text-align: center;
-  /*border: 1px solid #000;*/
-}
-
-
-.griditem {
-  display: inline-block;
-  zoom: 1;         /* for IE */
-  display*:inline; /* for IE */
-  text-align: center;
-  text-decoration: none;
-  margin: 25px;
-  color: #000;
-}
-
-
-.griditem p {
-  color: #000;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  letter-spacing: 1px;
-}
-
- .box {
-   position: relative;
-   width: 350px;
-   height:350px;
-   border-radius: 15px;
-   background-color: #ffffff;
-   transition: all .3s cubic-bezier(.694,.0482,.335,1);
- }
-
- .box:hover .companylogo{
-
-   max-width: 70%;
-   max-height: 70%;
- }
-
- #hiringprocess {
-   width: 60%;
-   text-align: center;
+ .middle {
+   /*border: 1px solid #000;*/
+   width: 75%;
    height: auto;
-   background: #fff;
+   margin-left: 12.5%;
+   text-align: center;
+   position: relative;
+   display: block;
    border-radius: 15px;
-   margin-left: 20%;
-   padding-top: 2%;
-   padding-bottom: 2%;
  }
 
- #hiringprocess p {
-   width: 80%;
-   margin-left: 10%;
-   text-align: left;
- }
+.clearfix{
+  overflow: auto;
+}
 
- .companylogo {
-   max-height: 60%;
-    max-width: 60%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: all .3s;
- }
+.res {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 15px;
+  display: inline-block;
+}
 
-  .bottom {
+#companyinfo {
+  width: 33%;
+  height: 400px;
+  background: #fff;
+  float: right;
+  border-radius: 15px;
+  margin-bottom: 2%;
+}
 
-    text-align: center;
-    display: block;
-  margin-top: 5%;
-  margin-bottom: 1%;
-  }
 
-  .bottom h6{
-    margin-bottom: -1%;
-  }
+table {
+  width: 60%;
+  background-color: #fff;
+  border-radius: 15px;
+  /*text-align: left;*/
+  margin-left: 20%;
+  padding: 2%;
+}
+.tablehead{
+  text-align: center;
+}
 
+
+th, td{
+
+  width: 80%;
+  text-align: left;
+  font-size: 1.5em;
+  padding: 1%;
+}
+
+td a{
+  color: #0099ff;
+  transition: all .3s;
+
+  text-align: left;
+}
+
+td a:hover{
+  color: #007acc;
+}
+
+
+.bottom {
+
+  text-align: center;
+  display: block;
+margin-top: 5%;
+margin-bottom: 1%;
+}
+
+.bottom h6{
+  margin-bottom: -1%;
+}
+
+.buttons a{
+  width: 150px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  background-color: #00ccff;
+  color: #fff;
+  padding:20px 10px;
+  letter-spacing: 1px;
+  border: none;
+
+  transition: all .3s;
+}
+.prev{
+  float:left;
+}
+.next{
+  float: right;
+}
+
+/*button {
+  background-color: #00ccff;
+  color: #fff;
+  padding:20px 36px;
+  letter-spacing: 1px;
+  border: none;
+
+  transition: all .3s
+}*/
+
+.buttons a:hover {
+  background-color: #0099ff;
+}
 
 ::-moz-selection {
     background: #b3d4fc;
