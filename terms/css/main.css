@@ -181,6 +181,68 @@ margin-bottom: 1%;
   background-color: #0099ff;
 }
 
+
+@media only screen and (max-device-width: 480px){
+  .imageselect{
+    display: none;
+  }
+
+  .header {
+    height: 50%;
+  }
+  .companies{
+    /*visibility: hidden;*/
+    display: none;
+  }
+  .middle{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .herotext{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 20%;
+  }
+  .herotext h1{
+    font-size: 24pt;
+    margin-top: 10px;
+  }
+  #position {
+    font-size: 20pt;
+  }
+
+  .buttons a {
+    width: 90px;
+    font-size: 12pt;
+  }
+
+  .buttons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  table {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  th, td {
+    font-size: 10pt;
+  }
+
+  #hiringprocess{
+    /*width: 90%;
+    margin-left: 5%;*/
+    display: none;
+  }
+
+  .bottom h6{
+    font-size: 6pt;
+  }
+
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;

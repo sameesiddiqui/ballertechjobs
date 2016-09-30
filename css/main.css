@@ -16,6 +16,7 @@ html {
     line-height: 1.4;
 }
 
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -45,6 +46,9 @@ a {
   -o-transition: background-image .5s;
   transition: background-image .5s;
 }
+
+
+
 .clearfix{
   overflow: auto;
 }
@@ -138,12 +142,12 @@ button:focus {
 }
 
 .herotext h1{
-  font-size: 400%;
+  font-size: 40pt;
 }
 
 .herotext p{
 
-  font-size: 200%;
+  font-size: 20pt;
   padding-bottom: 10%
 }
 
@@ -242,7 +246,64 @@ button:focus {
   .bottom h6{
     margin-bottom: -1%;
   }
+  @media only screen and (max-device-width: 480px){
+    .imageselect{
+      display: none;
+    }
 
+    .header {
+      height: 50%;
+    }
+    .companies{
+      /*visibility: hidden;*/
+      display: none;
+    }
+
+    .griditem p{
+      display: none;
+    }
+    .griditem {
+      margin: 5px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+    .herotext{
+      width: 80%;
+      margin-left: 10%;
+    }
+    .herotext h1{
+      font-size: 24pt;
+    }
+    .herotext p{
+      font-size: 14pt;
+      }
+
+      #companytext {
+        width: 80%;
+        margin-left: 10%;
+      }
+
+      #companytext h1{
+        font-size: 20pt;
+      }
+
+      #companytext p{
+        font-size: 12pt;
+      }
+
+    #hiringprocess{
+      /*width: 90%;
+      margin-left: 5%;*/
+      display: none;
+    }
+
+    .bottom h6{
+      font-size: 6pt;
+    }
+
+  }
 
 ::-moz-selection {
     background: #b3d4fc;

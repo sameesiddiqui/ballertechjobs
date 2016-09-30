@@ -151,6 +151,7 @@ transform-origin: left center;
  .middle {
    /*border: 1px solid #000;*/
    width: 75%;
+   max-width: 1000px;
    height: auto;
    margin-left: 12.5%;
    text-align: center;
@@ -246,15 +247,66 @@ margin-bottom: 1%;
   float: right;
 }
 
-/*button {
-  background-color: #00ccff;
-  color: #fff;
-  padding:20px 36px;
-  letter-spacing: 1px;
-  border: none;
+@media only screen and (max-device-width: 480px){
+  .imageselect{
+    display: none;
+  }
 
-  transition: all .3s
-}*/
+  .header {
+    height: 50%;
+  }
+  .companies{
+    /*visibility: hidden;*/
+    display: none;
+  }
+  .middle{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .herotext{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 20%;
+  }
+  .herotext h1{
+    font-size: 24pt;
+    margin-top: 10px;
+  }
+  #position {
+    font-size: 20pt;
+  }
+
+  .buttons a {
+    width: 90px;
+    font-size: 12pt;
+  }
+
+  .buttons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  table {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  th, td {
+    font-size: 10pt;
+  }
+
+  #hiringprocess{
+    /*width: 90%;
+    margin-left: 5%;*/
+    display: none;
+  }
+
+  .bottom h6{
+    font-size: 6pt;
+  }
+
+}
 
 .buttons a:hover {
   background-color: #0099ff;
