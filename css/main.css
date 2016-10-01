@@ -57,6 +57,19 @@ a {
   color: #fff;
   width: 100%;
 }
+
+.preload{
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  background:   url('../img/hq/google_hq.jpg'),
+                url('../img/hq/apple_hq.jpg'),
+                url('../img/hq/microsoft_hq.jpg'),
+                url('../img/hq/facebook_hq.jpg'),
+                url('../img/hq/twitter_hq.jpg'),
+                url('../img/hq/facebook_hq2.jpg');
+}
+
 .home::after, .signup::after, .companies::after{
   content: "";
   height: 1px;

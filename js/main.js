@@ -1,15 +1,29 @@
 var backgrounds = [
-
   "url('img/hq/google_hq.jpg')",
   "url('img/hq/apple_hq.jpg')",
   "url('img/hq/microsoft_hq.jpg')",
   "url('img/hq/facebook_hq.jpg')",
   "url('img/hq/twitter_hq.jpg')",
   "url('img/hq/facebook_hq2.jpg')"
-
+  // "img/hq/google_hq.jpg",
+  // "img/hq/apple_hq.jpg",
+  // "img/hq/microsoft_hq.jpg",
+  // "img/hq/facebook_hq.jpg",
+  // "img/hq/twitter_hq.jpg",
+  // "img/hq/facebook_hq2.jpg"
 ];
+
+// var images = [];
+//
+// function preload(){
+//   for (var i=0; i<backgrounds.length; i++){
+//     images[i] = new Image();
+//     images[i].src = backgrounds[i];
+//   }
+// }
 var check = true;
 var slideIndex =-1;
+// preload();
 auto();
 
 function auto() {
