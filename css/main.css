@@ -166,7 +166,7 @@ button:focus {
 }
 
 .herotext p{
-
+  letter-spacing: 0px;
   font-size: 20pt;
   padding-bottom: 10%
 }
