@@ -27,6 +27,7 @@ html {
 body {
   background-color: #f3f2f2;
   font-family: 'Roboto',sans-serif;
+  margin: 0;
 }
 
 
@@ -35,16 +36,17 @@ a {
 }
 
 .header {
+  position: relative;
   width: 100%;
   color: #fff;
   background: url("../img/hq/google_hq.jpg") 100% 0%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90%;
+  height: 90vh;
   -webkit-transition: background-image .5s;
   -moz-transition: background-image .5s;
   -o-transition: background-image .5s;
-  transition: background-image .5s;
+  transition: background-image .5s ease-in-out;
 }
 
 
@@ -59,15 +61,17 @@ a {
 }
 
 .preload{
+  display: none;
   visibility: hidden;
   width: 0;
   height: 0;
-  background:   url('../img/hq/google_hq.jpg'),
+  /*background:   url('../img/hq/google_hq.jpg'),
                 url('../img/hq/apple_hq.jpg'),
                 url('../img/hq/microsoft_hq.jpg'),
                 url('../img/hq/facebook_hq.jpg'),
                 url('../img/hq/twitter_hq.jpg'),
-                url('../img/hq/facebook_hq2.jpg');
+                url('../img/hq/facebook_hq2.jpg')
+                url('../companies/google/img/hero.jpg');*/
 }
 
 .home::after, .signup::after, .companies::after{
@@ -95,10 +99,11 @@ transform-origin: left center;
 
 .buttoncontainer{
   text-align: center;
-  position: relative;
+  position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   margin-bottom: 1%;
-  vertical-align: bottom;
   z-index: 1;
 }
 
@@ -141,6 +146,7 @@ button:focus {
   /*text-align: center;*/
   margin: 2%;
   letter-spacing: 1px;
+  text-shadow: 3px 3px 15px #000;
   -webkit-transition: all 0.5s ease;
 }
 
@@ -148,10 +154,11 @@ button:focus {
   text-align: center;
   padding-top: 2%;
   width: 70%;
+  letter-spacing: 2px;
   margin-left: 15%;
-  -webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
-  -moz-text-shadow: 3px 3px 4px rgba(0,0,0,0.75);
-  text-shadow: 2px 2px rgba(0,0,0,0.75);
+  -webkit-text-shadow: 3px 3px 15px rgba(0,0,0,0.75);
+  -moz-text-shadow: 3px 3px 15px rgba(0,0,0,0.75);
+  text-shadow: 3px 3px 15px #000;
 }
 
 .herotext h1{
@@ -173,6 +180,7 @@ button:focus {
 }
 
 .grid {
+  padding-top: 4%;
   margin-bottom: 4%;
   position: relative;;
   right:0;
@@ -265,7 +273,7 @@ button:focus {
     }
 
     .header {
-      height: 50%;
+      height: auto;
     }
     .companies{
       /*visibility: hidden;*/
