@@ -37,11 +37,11 @@ a {
 .header {
   width: 100%;
   color: #fff;
-  background: url("../img/hero.jpg") 100% 60%;
+  background: url("http://res.cloudinary.com/dklyjqkxa/image/upload/v1476150854/apple_tpy4ad.jpg") 100% 60%;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  height: 50vh;
+  height: 65vh;
 }
 
 .clearfix{

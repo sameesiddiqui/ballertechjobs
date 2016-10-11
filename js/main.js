@@ -1,10 +1,10 @@
 var backgrounds = [
-  "url('img/hq/google_hq.jpg')",
-  "url('img/hq/apple_hq.jpg')",
-  "url('img/hq/microsoft_hq.jpg')",
-  "url('img/hq/facebook_hq.jpg')",
-  "url('img/hq/twitter_hq.jpg')",
-  "url('img/hq/facebook_hq2.jpg')"
+  "url('http://res.cloudinary.com/dklyjqkxa/image/upload/v1476149119/google_hq_azlr3e.jpg')",
+  "url('http://res.cloudinary.com/dklyjqkxa/image/upload/v1476149119/apple_hq_bmqqhh.jpg')",
+  "url('http://res.cloudinary.com/dklyjqkxa/image/upload/v1476149119/microsoft_hq_c88f8g.jpg')",
+  "url('http://res.cloudinary.com/dklyjqkxa/image/upload/v1476149119/facebook_hq_bb66i0.jpg')",
+  "url('http://res.cloudinary.com/dklyjqkxa/image/upload/v1476149119/twitter_hq_cshigs.jpg')",
+  "url('http://res.cloudinary.com/dklyjqkxa/image/upload/v1476149119/facebook_hq2_q3fuww.jpg')"
   // "img/hq/google_hq.jpg",
   // "img/hq/apple_hq.jpg",
   // "img/hq/microsoft_hq.jpg",

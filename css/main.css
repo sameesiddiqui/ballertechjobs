@@ -39,10 +39,11 @@ a {
   position: relative;
   width: 100%;
   color: #fff;
-  background: url("../img/hq/google_hq.jpg") 100% 0%;
+  background: url("http://res.cloudinary.com/dklyjqkxa/image/upload/v1476149119/google_hq_azlr3e.jpg") 100% 0%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
+  top: 0px;
   -webkit-transition: background-image .5s;
   -moz-transition: background-image .5s;
   -o-transition: background-image .5s;
